@@ -1,7 +1,7 @@
-import CustomLoading from '@components/custom_loading/customLoading';
+import CustomLoading from '@components/common/custom_loading/customLoading';
 import CustomText from '@components/custom_text/customText';
 import SubmitBtn from '@components/submit_btn/submitBtn';
-import Wrapper from '@components/wrapper/wrapper';
+import Wrapper from '@components/auth_wrapper/authWrapper';
 import {setUser} from '@redux/reducers/userReducer';
 import {GST} from '@theme/global_styles';
 import React, {useState} from 'react';

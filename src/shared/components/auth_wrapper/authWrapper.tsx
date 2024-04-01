@@ -12,7 +12,11 @@ interface Props {
   noPaddingBottom: any;
 }
 
-const Wrapper = ({children, noPaddingTop, noPaddingBottom}: Partial<Props>) => {
+const AuthWrapper = ({
+  children,
+  noPaddingTop,
+  noPaddingBottom,
+}: Partial<Props>) => {
   const insets = useSafeAreaInsets();
   const paddingTop = noPaddingTop ? 0 : insets.top;
   const paddingBottom = noPaddingBottom ? 0 : insets.bottom;
@@ -23,20 +27,17 @@ const Wrapper = ({children, noPaddingTop, noPaddingBottom}: Partial<Props>) => {
         translucent
         backgroundColor="transparent"
       />
-      <LinearGradient
-        colors={[GRADIENT_A, GRADIENT_B, GRADIENT_C, GRADIENT_D]}
-        style={GST.FLEX}>
-        <View
-          style={[
-            styles.container,
-            {
-              paddingTop,
-              paddingBottom,
-            },
-          ]}>
-          {children}
-        </View>
-      </LinearGradient>
+
+      <View
+        style={[
+          styles.container,
+          {
+            paddingTop,
+            paddingBottom,
+          },
+        ]}>
+        {children}
+      </View>
     </>
   );
 };
@@ -47,4 +48,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Wrapper;
+export default AuthWrapper;

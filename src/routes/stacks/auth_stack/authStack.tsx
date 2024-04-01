@@ -1,5 +1,5 @@
 import {createStackNavigator} from '@react-navigation/stack';
-import Login from '@screens/auth/login';
+import Login from '@screens/auth/login/login';
 import {ROUTES} from '@utils/routes';
 import React from 'react';
 import {StatusBar} from 'react-native';

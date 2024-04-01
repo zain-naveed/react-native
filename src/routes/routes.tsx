@@ -6,7 +6,7 @@ import AuthStack from '@routes/stacks/auth_stack/authStack';
 const Routes = () => {
   const {user} = useSelector((state: any) => state.root.user);
 
-  return <>{user ? <AuthStack /> : <MainStack />}</>;
+  return <>{user ? <MainStack /> : <AuthStack />}</>;
 };
 
 export default Routes;
