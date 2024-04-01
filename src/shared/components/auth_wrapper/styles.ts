@@ -6,8 +6,12 @@ const styles = StyleSheet.create({
   Header: {
     flex: 0.4,
     backgroundColor: COLORS.PRIMARY,
-    display:"flex",
-    alignItems:"center"
+    display: 'flex',
+    alignItems: 'center',
+  },
+  Content: {
+    paddingLeft: RF(20),
+    paddingRight: RF(20),
   },
 });
 export default styles;

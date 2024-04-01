@@ -3,10 +3,10 @@ import {COLORS} from '@theme/colors';
 import {GST} from '@theme/global_styles';
 import React, {ReactChild} from 'react';
 import {StatusBar, StyleSheet, View} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scrollview';
 import styles from './styles';
+import Input from '@components/input/input';
 const {PRIMARY} = COLORS;
 
 interface Props {
@@ -41,6 +41,7 @@ const AuthWrapper = ({
         ]}>
         <AuthHeader />
       </View>
+      <View style={styles.Content}>{children}</View>
     </KeyboardAwareScrollView>
   );
 };
