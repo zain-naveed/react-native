@@ -15,7 +15,7 @@ import FastImage from 'react-native-fast-image';
 import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 import CustomText from '../custom_text/customText';
 
-const {COBALT, BLACK, GRAY, LIGHT_GRAY, SILVER} = COLORS;
+const {COBALT, BLACK, LIGHT_GRAY, SILVER} = COLORS;
 
 interface InputProp extends TextInputProps {
   containerStyle: ViewStyle;
@@ -68,7 +68,7 @@ const Input = forwardRef((props: Partial<InputProp>, ref: any) => {
           <Pressable onPress={toggleShowPassword}>
             <FontAwesomeIcon
               name={showPassword ? 'eye' : 'eye-slash'}
-              color={GRAY}
+              // color={GRAY}
               size={RF(15)}
             />
           </Pressable>

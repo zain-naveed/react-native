@@ -1,4 +1,3 @@
-import {userPlaceholder} from '@assets/icons';
 import {COLORS} from '@theme/colors';
 import {RF} from '@theme/responsive';
 import React from 'react';
@@ -28,11 +27,11 @@ const CustomAvatar = ({
           {width: RF(size), height: RF(size), borderRadius: RF(size) / 2},
           containerStyle,
         ]}>
-        <FastImage
+        {/* <FastImage
           source={source ? {uri: source} : userPlaceholder}
           style={source ? styles.img : styles.placeholder}
           resizeMode={resizeMode}
-        />
+        /> */}
       </View>
     </Pressable>
   );

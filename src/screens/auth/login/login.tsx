@@ -2,14 +2,13 @@
 import CustomText from '@components/custom_text/customText';
 import Input from '@components/input/input';
 import SubmitBtn from '@components/submit_btn/submitBtn';
-import AuthWrapper from '@components/auth_wrapper/authWrapper';
+import AuthWrapper from '@components/auth_wrapper/AuthWrapper';
 import {setUser} from '@redux/reducers/userReducer';
 import {GST} from '@theme/global_styles';
 import {LoginSchema} from '@utils/validations';
 import {Formik} from 'formik';
 import React, {useState} from 'react';
 import {View} from 'react-native';
-import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scrollview';
 import {useDispatch} from 'react-redux';
 
 import styles from './styles';
